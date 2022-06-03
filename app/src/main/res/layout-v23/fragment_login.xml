@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_fragment_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="83dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageView
+        android:id="@+id/iv_fingerPrint"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_login_status"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_header"
+        app:srcCompat="?android:attr/fingerprintAuthDrawable"
+        tools:layout_editor_absoluteX="165dp" />
+
+    <TextView
+        android:id="@+id/tv_login_header"
+        android:layout_width="60dp"
+        android:layout_height="19dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_light"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/iv_fingerPrint"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="175dp" />
+
+    <Button
+        android:id="@+id/b_auth_try"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_status"
+        tools:layout_editor_absoluteX="158dp" />
+
+    <TextView
+        android:id="@+id/tv_login_status"
+        android:layout_width="60dp"
+        android:layout_height="19dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/b_auth_try"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fingerPrint"
+        tools:layout_editor_absoluteX="175dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
